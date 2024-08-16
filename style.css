@@ -83,9 +83,10 @@ body{
 }
 
 .page2{
-    min-height: 142vh;
+    min-height: 90vh;
     width: 100%;
     padding: 100px 5vw;
+    border-bottom: 2px solid #111;
 }
 
 .page2 h1{
@@ -96,7 +97,7 @@ body{
 }
 
 .page2-container{
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -139,4 +140,87 @@ body{
 .page2-right button:hover{
     background-color: black;
     color: #fff;
+}
+
+
+.page3{
+    min-height: 170vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    border-bottom: 2px solid #111;
+}
+
+.page3 h1{
+    font-size: 6.8vw;
+    margin-left: 100px;
+    font-weight: 400;
+    color: #111;
+}
+
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-part1 img{
+    height: 470px;
+    margin-top: 200px;
+}
+
+.page3-part1 video{
+    height: 380px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.page3-part2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+}
+
+.page3-part2 img{
+    height: 470px;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+.page3-part2 video{
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 190px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 130px 90px;
+}
+
+.page3-footer h2{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+.page3-footer button{
+    border-radius: 50%;
+    border: none;
+    background-color: #edbfff;
+    color: #111;
+    height: 170px;
+    width: 170px;
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    font-weight: 500;
+    margin-right: 100px;
 }
