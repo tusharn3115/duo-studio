@@ -13,6 +13,16 @@ body{
     scrollbar-width: thin;
 }
 
+/* .cursor{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 9;
+    mix-blend-mode: difference;
+} */
+
 .main{
     background-color: #0f0d0d;
 }
@@ -143,10 +153,11 @@ body{
     position: relative;
     padding-top: 100px;
     border-bottom: 2px solid #111;
+    border-bottom: 2px solid #fff;
 }
 
 .page3 h1{
-    font-size: 6.8vw;
+    font-size: 6.8vw;   
     margin-left: 100px;
     font-weight: 400;
     color: #111;
@@ -184,9 +195,9 @@ body{
 }
 
 .page3-part2 video{
-    height: 300px;
-    margin-top: 150px;
-    margin-left: 190px;
+    height: 350px;
+    margin-top: 190px;
+    margin-left: 100px;
     object-fit: cover;
     object-position: center;
 }
@@ -218,4 +229,74 @@ body{
     font-weight: 500;
     margin-right: 100px;
     cursor: pointer;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 150px 100px;
+    margin: 100px 0;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    margin-bottom: 20px;
+}
+
+.elem{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    mix-blend-mode: screen;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1){
+    left: -4%;
+}
+.elem img:nth-child(3){
+    right: 3%;
+}
+
+.elem h1{
+    font-size: 6vw;
+    transition: all ease-out 0.5s;
+    font-weight: 500;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #edbfff;
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+.text-div{
+    height: 150px;
+    overflow: hidden;
+}
+
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ff0000;
 }

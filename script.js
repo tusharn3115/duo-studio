@@ -26,11 +26,18 @@ ScrollTrigger.refresh();
 }
 init();
 
+// var cursor = document.querySelector(".cursor");
+// var main = document.querySelector(".main");
+// main.addEventListener("mousemove", function(dets){
+//     cursor.style.left = dets.x+"px";
+//     cursor.style.top = dets.y+"px";
+// })
+
 var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".page1 h1",
         scroller: ".main",
-        markers: true,
+        // markers: true,
         start: "top 27%",
         end: "top 0",
         scrub: 3
@@ -53,7 +60,7 @@ var tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".page1 h1",
         scroller: ".main",
-        markers: true,
+        // markers: true,
         start: "top -115%",
         end: "top -120%",
         scrub: 3
@@ -62,4 +69,19 @@ var tl2 = gsap.timeline({
 
 tl2.to(".main", {
     backgroundColor: "#fff",
+})
+
+var tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 h1",
+        scroller: ".main",
+        // markers: true,
+        start: "top -510%",
+        end: "top -550%",
+        scrub: 3
+    }
+}) 
+
+tl3.to(".main", {
+    backgroundColor: "#0f0d0d",
 })
